@@ -1,8 +1,22 @@
 # SQL_querry
 Learning place 
 
-##SQL querry to define top earning salary multiply months 
-
+### SQL Query to define top earning salary multiply months 
 ```
-select max(salary*months) AS TOTAL, count(employee_id) from employee where (salary*months) = (select max(salary*months)from employee)
+select max(salary*months) AS TOTAL, count(employee_id) 
+from employee 
+where (salary*months) = (select max(salary*months)from employee)
+```
+
+### Query to Roud data with AVG inside
+```
+SELECT ROUND(AVG(Columsname) ,0) AS "Rounded Avg."
+FROM TableName;
+```
+
+### Example Query CEIL, AVG , and Replace
+```
+REPLACE() : used to remove 0 from salary.
+AVG() : used to calculate average salary.
+CEIL() : used to get next rounded integer.
 ```
