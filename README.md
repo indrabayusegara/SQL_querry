@@ -16,7 +16,8 @@ FROM TableName;
 
 ### Example Query CEIL, AVG , and Replace
 ```
+SELECT CEIL((AVG(salary)) - (AVG(REPLACE(salary, '0', '')))) AS avg_salary FROM employees;
+```
 REPLACE() : used to remove 0 from salary.
 AVG() : used to calculate average salary.
 CEIL() : used to get next rounded integer.
-```
