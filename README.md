@@ -2,7 +2,7 @@
 Learning place 
 
 ## SQL BASIC
-### Select statement 
+### 1. Select statement 
 #### TOP, distinct, Count, As, Max, Min, Avg
 ```
 select top 5 * from tabel_name 
@@ -19,10 +19,46 @@ select min(column) from tabel_name
 
 select avg(column) from tabel_name 
 ```
-### Select Tabel from diference database or from outer database 
+### 2. Select Tabel from diference database or from outer database 
 ```
 select * from DatabaseName.dbo.TabelName
 ```
+### 3. SQL where Statement 
+Statement >>>>>  (= 'equal', <> 'not equal', < 'less', > 'more', and , or, like, null, not null, in)
+```
+select * from TabelName where name = 'Hello'
+
+select * from TabelName where name <> 'Hello'
+
+select * from TabelName where salary < 100
+
+select * from TabelName where salary > 100
+
+select * from TabelName where salary < 100 AND Age = 25
+
+select * from TabelName where name = 'Hello' or name = 'hallo'
+
+select * from TabelName where name like '%H'
+
+select * from TabelName where name is not null
+
+select * from TabelName where name is null
+
+select * from TabelName where name in ('jim', 'holla', 'budi')
+```
+
+### 4. Group by and Order by 
+```
+select gender, count(gender) from Employee
+group by gender
+```
+group by with 2 statement gender and age
+```
+select gender, age, count(gender) from Employee
+group by gender, age
+```
+
+
 
 # Advanced SQL Querry
 
