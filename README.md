@@ -1,6 +1,31 @@
 # SQL_querry
 Learning place 
 
+## SQL BASIC
+### Select statement 
+#### TOP, distinct, Count, As, Max, Min, Avg
+```
+select top 5 * from tabel_name 
+
+select distinct(Column) from tabel_name
+
+select count(column) from tabel_name
+
+select column as new_column from tabel_name
+
+select max(column) from tabel_name
+
+select min(column) from tabel_name
+
+select avg(column) from tabel_name 
+```
+### Select Tabel from diference database or from outer database 
+```
+select * from DatabaseName.dbo.TabelName
+```
+
+# Advanced SQL Querry
+
 ### SQL Query to define top earning salary multiply months 
 ```
 select max(salary*months) AS TOTAL, count(employee_id) 
@@ -95,8 +120,3 @@ WHERE
 (SELECT COUNT(LAT_N) FROM STATION WHERE LAT_N > S.LAT_N) = (SELECT COUNT(LAT_N) FROM STATION WHERE LAT_N < S.LAT_N);
 ```
 
-### Select statement 
-#### TOP, distinct, Count, As, Max, Min, Avg
-```
-select top 5 * from tabel_name
-```
