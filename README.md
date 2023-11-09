@@ -94,3 +94,9 @@ FROM STATION S
 WHERE
 (SELECT COUNT(LAT_N) FROM STATION WHERE LAT_N > S.LAT_N) = (SELECT COUNT(LAT_N) FROM STATION WHERE LAT_N < S.LAT_N);
 ```
+
+### Select statement 
+#### TOP, distinct, Count, As, Max, Min, Avg
+```
+select top 5 * from tabel_name
+```
